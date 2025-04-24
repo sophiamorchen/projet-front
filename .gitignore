@@ -1,0 +1,8 @@
+# Cacher les fichiers système
+.DS_Store
+
+# Cacher les fichiers de cache Sass (si tu en génères plus tard)
+.sass-cache/
+
+# Cacher les fichiers d'environnement (au cas où)
+.env
