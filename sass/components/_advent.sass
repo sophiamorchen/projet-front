@@ -1,0 +1,21 @@
+@use "../abstracts/_mixins" as mixins
+.advent
+    height: 100vh
+    display: grid
+    grid-template-columns: repeat(5, 1fr )
+    gap: 1rem
+    &__box
+        @include mixins.flex-center()
+
+        @for $i from 1 through 24
+            &:nth-child(#{$i})
+                background-image: url('../images/image-#{$i}.svg')
+                background-repeat: no-repeat
+                background-position: center
+
+    &__number
+        @include mixins.flex-center()
+        background-color: white
+        height: 100%
+        aspect-ratio: 1/1
+        border-radius: 50% 50% 0 0
