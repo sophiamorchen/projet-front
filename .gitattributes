@@ -1,0 +1,23 @@
+*.json text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+#  👉 Cela forcera Git à garder les fins de ligne en LF pour tous ces types de fichiers, 
+#       même si je suis sous Windows.
+
+# =>  j'ai fait ce fichier car j'ai eu l'érreur :
+# warning: in the working copy of 'assets/js/quotes.json', LF will be replaced by CRLF the next time Git touches it
+# Qui voulait dire :
+
+# LF (Line Feed) et CRLF (Carriage Return + Line Feed) sont deux types de sauts de ligne utilisés par les systèmes d'exploitation.
+# LF est utilisé par Linux / macOS
+# CRLF est utilisé par Windows (ton terminal indique que tu es sur Windows : PS C:\...). 
+
+
+
+# Git dit simplement que :
+
+# Dans mon fichier quotes.json, actuellement, les sauts de ligne sont au format LF (comme sur Linux).
+# Mais la prochaine fois que Git modifiera mon fichier (par exemple lors d'un commit, d'un checkout, etc.),
+# il convertira automatiquement les LF en CRLF, car tu je suis sur Windows.
