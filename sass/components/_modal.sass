@@ -1,0 +1,31 @@
+@use "../abstracts/_mixins" as mixins
+@use "../abstracts/_variables" as var
+.modal 
+    background-color: rgba(0, 0, 0, 0.5)
+    width: 100%
+    height: 100%
+    // position sur la fenêtre - 
+    //Un bouton "remonter en haut" qui reste toujours en bas à droite, même quand tu scrolles.
+    position: fixed
+    left: 0
+    top: 0
+
+    &[open]
+        @include mixins.flex-center()
+
+    &__container
+        background-color: white
+        border-radius: 2rem 
+        max-width: 50%
+        padding: 2rem 
+        position: relative
+
+    &__button
+        position: absolute // position sur la page
+        top: 0.4rem
+        right: 0.6rem
+
+        svg
+            width: 1.5rem
+            height: 1.5rem
+            fill: var.$red
