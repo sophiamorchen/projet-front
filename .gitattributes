@@ -3,8 +3,9 @@
 *.css text eol=lf
 *.scss text eol=lf
 *.html text eol=lf
-#  👉 Cela forcera Git à garder les fins de ligne en LF pour tous ces types de fichiers, 
-#       même si je suis sous Windows.
+
+#  Ceci forcera Git à garder les fins de ligne en LF pour tous ces types de fichiers, 
+#  même si je suis sous Windows.
 
 # =>  j'ai fait ce fichier car j'ai eu l'érreur :
 # warning: in the working copy of 'assets/js/quotes.json', LF will be replaced by CRLF the next time Git touches it
